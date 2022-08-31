@@ -133,3 +133,50 @@ ex) 0110 0110  = 102
             
             b는 다시 id 값으로 돌아온다. a 값을 송출할 때 데이터 값을 해킹에서 보호하고 싶을 때 key값으로 ^ 해주고 받아서 다시 ^를 해주면 원래 값으로 돌아오게 됨.
 	    key 값을 모르면 알 수 없겠네.
+	    
+	    
+	    
+	    
+	    // 코드의 흐름 제어
+            
+            /*
+            int hp = 100;
+            bool isDead = (hp <= 0);
+
+            
+            if (isDead)
+            {
+                Console.WriteLine("You are Dead");
+            }
+            if (!isDead)
+            {
+                Console.WriteLine("You are Alive");
+            }
+            
+            
+            // 삼항연산자
+            Console.WriteLine(isDead ? "You are Dead" : "You are Alive");
+                        */
+
+
+            // switch   (switch case break)
+
+            int choice = 0;  // 0:가위, 1:바위, 2:보 3: 치트키
+            switch (choice)
+            {
+                case 0:
+                    Console.WriteLine("가위입니다.");
+                    break;
+                case 1:
+                    Console.WriteLine("바위입니다.");
+                    break;
+                case 2:
+                    Console.WriteLine("보입니다.");
+                    break;
+                case 3:
+                    Console.WriteLine("치트키입니다.");
+                    break;
+                default:
+                    Console.WriteLine("다 실패했습니다.");
+                    break;
+            }
